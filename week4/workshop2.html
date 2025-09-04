@@ -1,0 +1,107 @@
+ช<!DOCTYPE html>
+<hhtml lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>การใช้ Form</title>
+</head>
+<body>
+    <h2>ฟอร์มสมัครเข้าร่วมโครงการพัฒนาทักษะดิจิทัล</h2>
+    <form action="" style="border: 1px solid; width: 40% ;padding: 1%;">
+        <Fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <div style="margin: 5px;">
+                <label for="fname-lname">ชื่อ-นามสกุล:*</label>
+                <input type="text" name="fname-lname" required>
+            </div>
+            <div style="margin: 5px;">
+                <label for="ID card number">เลขบัตรประชาชน(13 หลัก):</label>
+                <input type="text" name="ID card number">
+            </div>
+            <div style="margin: 5px;">
+                <label for="birthday">วันเกิด:</label>
+                <input type="date" name="birthday">
+           </div>
+           <div style="margin: 5px;">
+            <label for="age">อายุ:</label>
+            <input type="number" name="age" min="1" max="80" step="1">
+        </div>
+        <div style="margin: 5px;">
+            <label for="gender">เพศ:</label>
+            <input type="radio" name="gender" value="ชาย"> ชาย
+            <input type="radio" name="gender" value="หญิง"> หญิง
+            <input type="radio" name="gender" value="ไม่ระบุ"> ไม่ระบุ
+        </div>
+        </Fieldset>
+    <form action="" style="border: 1px dashed;width: 40%;">
+        <Fieldset>
+            <legend>ข้อมูลติดต่อ</legend>
+            <div style="margin: 5px;">
+                <label for="email">อีเมล:*</label>
+                <input type="email" name="email" required >
+            </div>
+            <div style="margin: 5px;">
+                <label for="phone">เบอร์โทร:</label>
+                <input type="phone" name="phone">
+            </div>
+            <div style="margin: 5px;">
+                <label for="personal website">เว็บไซต์ส่วนตัว:</label>
+                <input type="text" name="personal website" required>
+            </div>
+        </Fieldset>
+        <form action="" style="border: 1px dashed;width: 40%;">
+        <Fieldset>
+                <legend>ทักษะเเละความสามารถ</legend>
+        
+        <div style="margin: 5px;">
+            <label for="interests">ทักษะที่ถนัด:</label>
+            <input type="checkbox" name="interests" value="Coding"> Coding
+            <input type="checkbox" name="interests" value="Design"> Design
+            <input type="checkbox" name="interests" value="Marketing"> Marketing
+        </div>
+        <label for="Frequently used tools">เครื่องมือที่ใช้บ่อย:</label>
+            <select name="province">
+            <option value="">-- กรุณาเลือกเครื่องมือ--</option>
+            <option value="">Photoshop</option>
+            <option value="">Figma</option>
+            <option value="">Visual Studio Code</option>
+            <option value="">Google Studio Code</option>
+        </select>
+        <div style="margin: 5px;">
+            <label for="color">สีประจำตัว:</label>
+            <input type="color" name="color">
+        </div>
+        <div style="margin: 5px;">
+            <label for="skill">ระดับความชำนาญ:</label>
+            <input type="range" id="skill" name="skill" min="0" max="100" value="70" onabort="output.value = skill.value">
+        </div>
+    </Fieldset>
+        <form action="" style="border: 1px dashed;width: 40%;">
+            <Fieldset>
+                <legend>เอกสารเเนบ</legend>
+        <div style="margin: 5px;">
+             <label for="profilo">รูปถ่ายโปรไฟล์:</label>
+             <input type="file" name="profile" >
+        </div>
+        <div style="margin: 5px;">
+            <label for="profilo">เเนบประวัติย่อ(PDF):</label>
+            <input type="file" name="profile" >
+       </div>
+    </Fieldset>
+       <form action="" style="border: 1px dashed;width: 40%;">
+        <Fieldset>
+            <legend>ข้อเสนอเเนะเพิ่มเติม</legend>
+            <div style="margin: 10px;">
+                <label for="ID card number">อยากให้โครงการนี้มีอะไรบ้าง:</label>
+                <textarea name="address" rows="4" cols="40" placeholder="เสนอความคิดเห็นที่นี่..."></textarea>
+            </div style="margin: 10px;">
+
+        </Fieldset>
+        <div style="margin: 10px;">
+             <input type="submit" value="ส่งใบสมัคร">
+             <input type="reset" value="ล้างข้อมูล">
+        </div>
+    
+    </form>
+</body>
+</hhtml>

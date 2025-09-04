@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(65, 67, 68);
+    color: aliceblue;
+    font-family: prompt, sans-serif;
+    text-align: center;
+    padding: 100px;
+}
+h1{
+    display: none;
+}
+/*Smartphone*/
+@media only screen and (max-width : 480px) {
+    body{
+        background-color: red;
+        }
+    #smartphone h1{
+        display: block;
+        }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    body{
+        background: orangered;
+        }
+        #tablets h1{
+            display: block;
+        } 
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    body{
+        background: rgb(77, 146, 24);
+        }
+        #normal h1{
+            display: block;
+        } 
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    body{
+        background: rgb(0, 179, 255);
+        }
+        #widescreen h1{
+            display: block;
+        } 
+}
+@media (min-width: 1201px) and (max-width: 1250px) {
+    body{
+        background: rgb(170, 0, 255);
+        }
+        #landscape h1{
+            display: block;
+        } 
+}
+    

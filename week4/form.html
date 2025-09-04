@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> การใช้ form</title>
+</head>
+<body>
+    <h2>สมัครสมาชิก</h2>
+            
+            <legend>ข้อมูลทั่วไป</legend>
+
+            <div style="margin: 10px;">
+        <label for="name">ชื่อ</label>
+        <input type="text" name="fname" required>
+    </div>
+    
+    <div>
+        <label for="name">นามสกุล</label>
+        <input type="text" name="lname" required>
+    </div>
+   
+    <div>
+        <label for="name">อีเมล</label>
+        <input type="email" name="email" required>
+    </div>
+   
+    <div>
+        <label for="password">รหัสผ่าน</label>
+        <input type="password" name="password" required>
+    </div>
+
+    <div>
+        <label for="password">ยืนยันรหัสผ่าน</label>
+        <input type="password" name="password" required>
+    </div>
+
+    <div>
+        <label for="phone">เบอร์โทร</label>
+        <input type="tel" name="phone" required>
+    </div>
+
+    <div>
+        <label for="address">ที่อยู่</label>
+        <textarea name="address" rows="4" cols="30"></textarea required>
+    </div>
+
+    <div style="margin: 5px;">
+        <label for="gender">เพศ</label>
+        <input type="radio" name="gender" value="ชาย"> ชาย
+        <input type="radio" name="gender" value="หญิง"> หญิง
+        <input type="radio" name="gender" value="LGBTQ+"> LGBTQ+
+        <input type="radio" name="gender" value="ไม่ระบุ"> ไม่ระบุ
+    </div>
+
+    <div style="margin: 5px;">
+        <label for="interests">ความสนใจ</label>
+        <input type="checkbox" name="interests" value="กีฬา"> กีฬา
+        <input type="checkbox" name="interests" value="ดนตรี"> ดนตรี
+        <input type="checkbox" name="interests" value="การอ่าน"> การอ่าน
+    </div>
+
+    <div style="margin: 5px;">
+        <label for="brithday">วันเกิด</label>
+        <input type="date" name="brithday">
+    </div>
+
+    <div style="margin: 5px;">
+        <label for="color">สีโปรด</label>
+        <input type="color" name="color">
+    </div>
+
+    <div style="margin: 5px;">
+        <label for="age">อายุ</label>
+        <input type="number" name="age" min="10" max="120" step="1">
+    </div>
+
+    <div>
+        <label for="province">จังหวัด</label>
+        <select name="province">
+                <option value=" ">กรุงเทพมหานคร</option>
+                <option value=" ">เชียงใหม่</option>
+                <option value=" ">ภูเก็ต</option>
+                <option value=" ">สงขลา</option>
+                <option value=" ">สระบุรี</option>
+                <option value=" ">นครนายก</option>
+                <option value=" ">นครราชสีมา</option>
+        </select>
+    </div>
+    
+    <div style="margin: 5px;">
+        <label for="profile">โปรไฟล์</label> 
+        <input type="file" name="profile">
+    </div>
+
+    <div style="margin: 10;">
+        <input type="submit" value="สมัครสมาชิก">
+        <input type="reset" value="ล้างข้อมูล">
+    </div>
+
+   </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(18, 77, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    /*width: 200px;
+    height: 200px;
+    background-color: tomato;
+    transition-property:backgroud-color;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+    transition-duration: 2s;*/
+
+    /*/transition: backgroud 0.5s, width ease-in-out;*/
+    transition-property: backgroud-color, width;
+    transition-duration: 0.5s,3s;
+    transition-timing-function: ease-in-out;
+    
+    .box:hover{
+        background: rgb(255, 166, 0);
+        width: 400px;
+    }
+    
+
+    /*ย้ายตำเเหน่ง Box*/
+    /*transform: translate(100px, 1px);*/
+    
+    /*transform: rotate(40deg);*/
+
+    /*transform: rotatex(45deg);*/
+    /*transform: rotatey(45drg);*/
+    
+    /*transform: scale(2,1);*/
+
+    /*transform: skewY(20deg);*/
+    /*transform: skewX(20deg);*/
+
+}

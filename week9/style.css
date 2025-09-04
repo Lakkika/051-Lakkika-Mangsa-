@@ -1,0 +1,82 @@
+body{
+    /* background-color:brown;*/
+    background-image: url(flowers.jpg);
+    background-size: 100%; /*ขนาดรูป*/
+    background-position: center;  /*รูปอยู่ตรงกลาง*/
+    /* background-position: center top; */  /*รูปกลางบน*/
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-y; */   /*ทำรูปซ้ำๆ*/
+
+    height: 500px;
+    background-attachment: fixed;  /*BG อยู่กับที่ */
+    /*background-attachment: scroll;  /*BG ขยับตาม */
+    
+}
+ul{
+    list-style: none;
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+}
+.sideber{
+    width: 100;
+    /*background-color: black;*/
+}
+a:link{
+    color: rgb(255, 115, 0);
+    text-decoration: none;
+}
+a:hover{
+    color: brown;
+}
+/*a:visited{
+    color: rgb(red, green, blue);
+}*/
+a:active{
+    color: rgb(251, 255, 0);
+}
+li{
+padding: 1px 10px;
+background-color: rgb(0, 195, 255);
+color: white;
+border-radius: 20px;
+}
+li:hover{
+    background-color: rgb(0, 26, 255);
+    color: black;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.box2{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.box3{
+  
+    background-color: #cc00ff33; 
+    padding: 50px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.box4{
+    justify-content: center ;
+    display: flex ;
+    gap: 50px;
+}
+img{
+    
+    width: 20%;
+    box-shadow: 5px 2px 10px rgba(255, 0, 0 , 473);
+    border-radius: 5px;
+    
+}
